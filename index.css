@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color:white;
+    position: relative;
+    min-height: 100 vh;
+    display:flex;
+    flex-direction: column;
+
+}
+header{
+    background-color: purple;
+    min-height: 10vh;
+}
+main {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+aside {
+    min-width: 30vw;
+    
+    article {
+        min-height: 10vh;
+        background-color: magenta;
+    }
+}
+aside.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+aside.right-side {
+    background-color: lightpink;
+}
+footer {
+ min-height: 10vh;
+ background-color: beige;
+ margin-top: auto;
+
+}
+@media screen and 
+    (max-width: 600px){
+        main {
+            flex-direction: column;
+            gap: 10vh;
+            aside.right-side {
+                min-height: 10vh;
+            }
+        }
+
+    }
+    
+        
+
